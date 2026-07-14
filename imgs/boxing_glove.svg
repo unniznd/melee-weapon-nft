@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#5a1524"/><stop offset="50%" stop-color="#2c0a12"/><stop offset="100%" stop-color="#140409"/>
+    </radialGradient>
+    <radialGradient id="glove3" cx="65%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#ff6b6b"/><stop offset="45%" stop-color="#e01e1e"/><stop offset="100%" stop-color="#8f0f14"/>
+    </radialGradient>
+    <linearGradient id="cuff3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#d9d0c4"/>
+    </linearGradient>
+    <linearGradient id="gold3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe27a"/><stop offset="100%" stop-color="#d69a1c"/>
+    </linearGradient>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="400" height="400" rx="28" fill="url(#bg3)"/>
+  <ellipse cx="215" cy="200" rx="150" ry="90" fill="#ff2e2e" opacity="0.3" filter="url(#soft3)"/>
+  <g fill="#ffb3b3" opacity="0.7">
+    <circle cx="60" cy="80" r="3"/><circle cx="340" cy="70" r="2.5"/><circle cx="355" cy="185" r="2"/>
+    <circle cx="70" cy="320" r="2.5"/><circle cx="330" cy="330" r="3"/><circle cx="300" cy="100" r="2"/>
+  </g>
+  <g filter="url(#glow3)">
+    <path d="M150 250 Q120 300 165 300 Q195 296 188 252 Z" fill="url(#glove3)" stroke="#6e0b10" stroke-width="2"/>
+    <rect x="70" y="150" width="70" height="100" rx="16" fill="url(#cuff3)" stroke="#b3a794" stroke-width="2"/>
+    <rect x="70" y="150" width="70" height="16" rx="8" fill="url(#gold3)"/>
+    <g stroke="#b3252b" stroke-width="3" stroke-linecap="round">
+      <line x1="92" y1="182" x2="118" y2="194"/><line x1="118" y1="182" x2="92" y2="194"/>
+      <line x1="92" y1="208" x2="118" y2="220"/><line x1="118" y1="208" x2="92" y2="220"/>
+    </g>
+    <path d="M132 150 Q126 128 165 126 L275 126 Q332 128 338 200 Q332 272 275 272 L165 272 Q132 270 128 246 Z" fill="url(#glove3)" stroke="#6e0b10" stroke-width="3"/>
+    <path d="M300 150 Q315 200 300 250" fill="none" stroke="#8f0f14" stroke-width="3" opacity="0.7"/>
+    <g stroke="#8f0f14" stroke-width="2.5" opacity="0.55" fill="none">
+      <path d="M175 135 Q190 200 175 265"/><path d="M215 130 Q230 200 215 268"/><path d="M255 130 Q270 200 255 268"/>
+    </g>
+    <path d="M175 150 Q250 138 300 165" fill="none" stroke="#ffb0b0" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  <rect x="8" y="8" width="384" height="384" rx="24" fill="none" stroke="url(#gold3)" stroke-width="4"/>
+</svg>

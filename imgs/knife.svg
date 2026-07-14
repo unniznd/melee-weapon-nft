@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#3a1a55"/><stop offset="50%" stop-color="#1c0d30"/><stop offset="100%" stop-color="#0a0414"/>
+    </radialGradient>
+    <linearGradient id="blade2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8d9ff"/><stop offset="45%" stop-color="#b98cff"/><stop offset="100%" stop-color="#6a2fd0"/>
+    </linearGradient>
+    <linearGradient id="edge2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#d8b6ff"/>
+    </linearGradient>
+    <linearGradient id="handle2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a4a2b"/><stop offset="100%" stop-color="#3a2013"/>
+    </linearGradient>
+    <linearGradient id="frame2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9ff3"/><stop offset="100%" stop-color="#9b30ff"/>
+    </linearGradient>
+    <filter id="glow2" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="400" height="400" rx="28" fill="url(#bg2)"/>
+  <ellipse cx="200" cy="200" rx="160" ry="70" fill="#8a2be2" opacity="0.35" filter="url(#soft2)"/>
+  <g fill="#d59bff" opacity="0.7">
+    <circle cx="60" cy="80" r="3"/><circle cx="340" cy="70" r="2.5"/><circle cx="355" cy="180" r="2"/>
+    <circle cx="60" cy="310" r="2.5"/><circle cx="330" cy="320" r="3"/><circle cx="300" cy="90" r="2"/>
+  </g>
+  <g transform="rotate(-18 200 200)" filter="url(#glow2)">
+    <rect x="58" y="184" width="96" height="32" rx="12" fill="url(#handle2)" stroke="#241209" stroke-width="2"/>
+    <circle cx="62" cy="200" r="12" fill="#5a3420" stroke="#241209" stroke-width="2"/>
+    <g stroke="#2a160b" stroke-width="3" opacity="0.6">
+      <line x1="80" y1="186" x2="72" y2="214"/><line x1="98" y1="186" x2="90" y2="214"/>
+      <line x1="116" y1="186" x2="108" y2="214"/><line x1="134" y1="186" x2="126" y2="214"/>
+    </g>
+    <rect x="150" y="172" width="12" height="56" rx="4" fill="#c9a54a" stroke="#7a5f1e" stroke-width="2"/>
+    <path d="M164 187 L322 184 L360 200 L322 216 L164 213 Z" fill="url(#blade2)" stroke="#4a1f9a" stroke-width="1.5"/>
+    <path d="M164 213 L322 216 L360 200" fill="none" stroke="url(#edge2)" stroke-width="2.5"/>
+    <line x1="172" y1="200" x2="330" y2="200" stroke="#e9dcff" stroke-width="2" opacity="0.7"/>
+  </g>
+  <rect x="8" y="8" width="384" height="384" rx="24" fill="none" stroke="url(#frame2)" stroke-width="4"/>
+</svg>
